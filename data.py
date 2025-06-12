@@ -9,7 +9,9 @@ from konlpy.tag import Okt
 # 시각화
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
-
+# -----------------------------------------
+# 1. 데이터 로딩
+# -----------------------------------------
 
 # 데이터 불러오기
 df = pd.read_csv("dcinside_posts.csv")
@@ -31,3 +33,4 @@ top_keywords = counter.most_common(50)
 print("📌 상위 50개 키워드:")
 for word, freq in top_keywords:
     print(f"{word}: {freq}")
+# 워드클라우드 생성
